@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px; /* Biar ada ruang kalau layar kecil */
+}
+
+.card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    width: 100%; /* Biar responsif */
+}
+
+img.birthday {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 75vh; /* Biarkan gambar lebih besar */
+    aspect-ratio: 1 / 1; /* Set rasio gambar jadi 3:4 */
+    object-fit: contain; /* Biar gak kepotong */
+    display: block;
+    margin: 0 auto;
+}
+
+
+.text {
+    margin-top: 10px;
+}
+
+.muted {
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.space {
+    height: 20px;
+}
+
+audio {
+    width: 100%;
+}
+
+/* Media query buat layar kecil */
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+    }
+    img.birthday {
+        max-height: 40vh;
+    }
+}
